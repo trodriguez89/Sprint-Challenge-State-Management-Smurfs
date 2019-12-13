@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from "react-redux";
-import { addSmurf} from "../actions/smurfActions";
+import { addSmurf } from "../actions/smurfActions";
 
 
 const SmurfForm = props => {
@@ -39,18 +39,18 @@ const SmurfForm = props => {
             <form onSubmit={handleSubmit}>
                 <label>Name:</label>
                 <input
-                onChange={handleName}
-                value={name}
+                    onChange={handleName}
+                    value={name}
                 />
                 <label>Age:</label>
                 <input
-                value={age}
-                onChange={handleAge}
+                    value={age}
+                    onChange={handleAge}
                 />
                 <label>Height:</label>
                 <input
-                value={height}
-                onChange={handleHeight}
+                    value={height}
+                    onChange={handleHeight}
                 />
                 <button onSubmit={handleSubmit}>Submit</button>
             </form>
@@ -64,4 +64,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, {addSmurf})(SmurfForm);
+export default connect(mapStateToProps, { addSmurf })(SmurfForm);
