@@ -11,9 +11,9 @@ const SmurfList = props => {
         <h2>Testing!</h2>
         {props.smurfs.map(item => (
             <div>
-            <h3>{item.name}</h3>
-            <h4>{item.age}</h4>
-            <h4>{item.height}</h4>
+            <h3>Name: {item.name}</h3>
+            <h4>Age: {item.age}</h4>
+            <h4>Height: {item.height}</h4>
             </div>
         ))}
         </div>
