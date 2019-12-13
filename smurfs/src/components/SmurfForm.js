@@ -13,10 +13,11 @@ const SmurfForm = props => {
         props.addSmurf({
             name: name,
             age: age,
-            height: height
+            height: height,
+            id: Date.now()
         })
         setName("")
-        setAge()
+        setAge("")
         setHeight("")
     }
 
@@ -36,7 +37,7 @@ const SmurfForm = props => {
         <div>
             <h3>Add A New Smurf!</h3>
             <form onSubmit={handleSubmit}>
-                <labe>Name:</labe>
+                <label>Name:</label>
                 <input
                 onChange={handleName}
                 value={name}
